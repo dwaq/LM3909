@@ -248,8 +248,6 @@ Connection ~ 5200 2100
 Connection ~ 5750 1850
 Wire Wire Line
 	3300 3750 6350 3750
-Wire Wire Line
-	6350 3750 6350 2050
 $Comp
 L Battery_Cell BT1
 U 1 1 5A1F4857
@@ -322,4 +320,19 @@ F 3 "" H 5300 1850 50  0001 L CNN
 	1    5300 1850
 	-1   0    0    1   
 $EndComp
+$Comp
+L R R?
+U 1 1 5A206553
+P 6350 3150
+F 0 "R?" V 6430 3150 50  0000 C CNN
+F 1 "0" V 6350 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6280 3150 50  0001 C CNN
+F 3 "" H 6350 3150 50  0001 C CNN
+	1    6350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2050 6350 3000
+Wire Wire Line
+	6350 3750 6350 3300
 $EndSCHEMATC
