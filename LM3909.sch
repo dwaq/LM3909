@@ -257,17 +257,23 @@ Wire Wire Line
 Wire Wire Line
 	5650 1500 6050 1500
 Wire Wire Line
+	6050 1500 6400 1500
+Wire Wire Line
 	3000 1500 3000 1600
 Wire Wire Line
 	3000 1900 3000 1950
 Wire Wire Line
 	3000 1950 3000 2000
 Wire Wire Line
-	2400 1900 2400 2000
+	2400 1900 2400 1950
+Wire Wire Line
+	2400 1950 2400 2000
 Wire Wire Line
 	2400 2300 2400 2400
 Wire Wire Line
-	2400 2400 2400 3050
+	2400 2400 2400 2500
+Wire Wire Line
+	2400 2500 2400 3050
 Wire Wire Line
 	2400 3050 2400 3200
 Wire Wire Line
@@ -277,7 +283,9 @@ Wire Wire Line
 Wire Wire Line
 	3000 2300 3000 2400
 Wire Wire Line
-	3000 2400 3000 3150
+	3000 2400 3000 2650
+Wire Wire Line
+	3000 2650 3000 3150
 Wire Wire Line
 	3000 1950 3400 1950
 Wire Wire Line
@@ -308,9 +316,13 @@ Wire Wire Line
 Connection ~ 2400 2400
 Connection ~ 2400 3050
 Wire Wire Line
-	2400 3500 2400 3600
+	2400 3500 2400 3550
+Wire Wire Line
+	2400 3550 2400 3600
 Wire Wire Line
 	2400 3900 2400 4000
+Wire Wire Line
+	1800 4000 2400 4000
 Wire Wire Line
 	2400 4000 3000 4000
 Wire Wire Line
@@ -353,10 +365,78 @@ Wire Wire Line
 Wire Wire Line
 	5650 3350 5650 3050
 Wire Wire Line
-	4750 2250 4750 2150
+	4750 2050 4750 2150
 Wire Wire Line
-	4750 2150 4750 2050
+	4750 2150 4750 2250
 Wire Wire Line
 	5200 2150 4750 2150
 Connection ~ 4750 2150
+$Comp
+L Conn_01x04 J?
+U 1 1 5A21951D
+P 6950 2400
+F 0 "J?" H 6950 2600 50  0000 C CNN
+F 1 "Conn_01x04" H 6950 2100 50  0000 C CNN
+F 2 "" H 6950 2400 50  0001 C CNN
+F 3 "" H 6950 2400 50  0001 C CNN
+	1    6950 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_01x04 J?
+U 1 1 5A21958D
+P 1500 2200
+F 0 "J?" H 1500 2400 50  0000 C CNN
+F 1 "Conn_01x04" H 1500 1900 50  0000 C CNN
+F 2 "" H 1500 2200 50  0001 C CNN
+F 3 "" H 1500 2200 50  0001 C CNN
+	1    1500 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2100 2100 2100
+Wire Wire Line
+	2100 2100 2100 3550
+Wire Wire Line
+	2100 3550 2400 3550
+Connection ~ 2400 3550
+Wire Wire Line
+	1700 2200 1950 2200
+Wire Wire Line
+	1950 2200 1950 2650
+Wire Wire Line
+	1950 2650 3000 2650
+Connection ~ 3000 2650
+Wire Wire Line
+	1700 2400 1800 2400
+Wire Wire Line
+	1800 2400 1800 4000
+Connection ~ 2400 4000
+Wire Wire Line
+	6750 2500 6400 2500
+Wire Wire Line
+	6400 2500 6400 1500
+Connection ~ 6050 1500
+Wire Wire Line
+	6750 2200 6650 2200
+Wire Wire Line
+	6650 2200 6650 4100
+Wire Wire Line
+	6650 4100 2250 4100
+Wire Wire Line
+	2250 4100 2250 2500
+Wire Wire Line
+	2250 2500 2400 2500
+Connection ~ 2400 2500
+Wire Wire Line
+	6750 2400 6500 2400
+Wire Wire Line
+	6500 2400 6500 1300
+Wire Wire Line
+	6500 1300 2200 1300
+Wire Wire Line
+	2200 1300 2200 1950
+Wire Wire Line
+	2200 1950 2400 1950
+Connection ~ 2400 1950
 $EndSCHEMATC
